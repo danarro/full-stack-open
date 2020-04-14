@@ -1,0 +1,20 @@
+title Browser Server Responses on add notes for Single Page App
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note over server:
+The server creates a new note object 
+with the data in the form
+end note
+server->browser: Server sends a note created message to the browser but no redirect
+
+
+note over browser:
+browser starts executing js-code
+that adds the new note to the DOM 
+end note
+
+
+
+note over browser:
+browser re-renders notes to display
+end note
